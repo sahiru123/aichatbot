@@ -83,7 +83,7 @@ index = pc.Index(settings.PINECONE_INDEX_NAME)
 # Initialize embeddings
 embeddings = AzureOpenAIEmbeddings(
     azure_deployment=settings.EMBEDDING_DEPLOYMENT_NAME,
-    openai_api_key=settings.AZURE_OPENAI_KEY,
+    openai_api_key=settings.AZURE_OPENAI_EMBEDDING_KEY,
     azure_endpoint=settings.AZURE_OPENAI_ENDPOINT,
     api_version="2024-05-01-preview",
     chunk_size=1,

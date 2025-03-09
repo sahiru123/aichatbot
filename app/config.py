@@ -28,6 +28,7 @@ class Settings(BaseSettings):
     AZURE_OPENAI_KEY: str = os.getenv("AZURE_OPENAI_KEY")
     EMBEDDING_DEPLOYMENT_NAME: str = os.getenv("EMBEDDING_DEPLOYMENT_NAME")
     DEPLOYMENT_NAME: str = os.getenv("DEPLOYMENT_NAME")
+    AZURE_OPENAI_EMBEDDING_KEY: str = os.getenv("AZURE_OPENAI_EMBEDDING_KEY")
     
     # OpenAI Model Settings
     MODEL_TEMPERATURE: float = float(os.getenv("MODEL_TEMPERATURE", "0.1"))
